@@ -9,6 +9,11 @@ li {
     display: inline-block;
 }
 
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .about-store {
     display: inline-block;
     text-decoration: none;
@@ -34,22 +39,37 @@ body {
     padding: 0;
 }    
 
-footer {
-    background-color: #f2f2f2;
-    display: flex;
-    color: #70757a;  
-    padding: 0 20px; 
-}
+/***FOOTER***/
 
-.footer-link {
-    padding: 15px;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 .start-footer {
     justify-content: flex-start;
     order: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .end-footer {
     justify-content: flex-end;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #70757a;
+    cursor: pointer;
+    padding: 15px;
+}
+
+a.footer-link {
+    text-decoration: underline;
 }
